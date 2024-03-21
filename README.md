@@ -16,6 +16,8 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Theory**
 
+A combinational circuit is a circuit in which the output depends on the present combination of inputs. Combinational circuits are made up of logic gates. The output of each logic gate is determined by its logic function. Combinational circuits can be made using various logic gates, such as AND gates, OR gates, and NOT gates.
+
 **Logic Diagram**
 
 **Procedure**
@@ -35,16 +37,37 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: MARELLA HASINI
 
+RegisterNumber:212223240083
 
-**RTL realization**
+*/
+```
+module combinationalcircuit(A,B,C,D,F1); 
+input A,B,C,D; 
+output F1; 
+wire x1,x2,x3,x4,x5; 
+assign x1=(~A)&(~B)&(~C)&(~D); 
+assign x2=(A)&(~C)&(~D); 
+assign x3=(~B)&(C)&(~D); 
+assign x4=(~A)&(B)&(C)&(D); 
+assign x5=(B)&(~C)&(D); 
+assign F1=x1|x2|x3|x4|x5; 
+endmodule
+```
 
 **Output:**
 
+**RTL realization**
+
 **RTL**
+![OUTPUT](<RTL realization 2.jpg>)
+
+# Truth table:
+![OUTPUT](<Truth table 2.jpg>)
 
 **Timing Diagram**
+![OUTPUT](<Timing diagram 2.png>)
 
 **Result:**
 
