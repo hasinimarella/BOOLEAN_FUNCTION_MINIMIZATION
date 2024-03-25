@@ -61,6 +61,7 @@ endmodule
 **RTL realization**
 
 **RTL**
+
 ![OUTPUT](<RTL realization 2.jpg>)
 
 # Truth table:
