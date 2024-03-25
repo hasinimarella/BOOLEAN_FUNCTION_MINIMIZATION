@@ -59,8 +59,8 @@ endmodule
 **Output:**
 
 **RTL realization**
-
 **RTL**
+
 
 ![OUTPUT](<RTL realization 2.jpg>)
 
